@@ -1,7 +1,6 @@
 {
 	"compilerOptions": {
 		"declaration": true,
-		"esModuleInterop": true,
 		"exactOptionalPropertyTypes": true,
 		"lib": [
 			"ES2021"
@@ -9,6 +8,7 @@
 		"module": "Node16",
 		"skipLibCheck": true,
 		"strict": true,
-		"target": "ES2021"
+		"target": "ES2021",
+		"verbatimModuleSyntax": true
 	}
 }
