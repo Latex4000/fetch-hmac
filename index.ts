@@ -35,7 +35,6 @@ async function getSignature(request: Request, key: BinaryLike | KeyObject, base6
 	hmac.update(
 		request.method + "\r\n" +
 		request.url + "\r\n" +
-		(request.headers.get("Content-Length") ?? "") + "\r\n" +
 		(request.headers.get("Content-Type") ?? "") + "\r\n" +
 		(request.headers.get("X-Hmac-Timestamp") ?? "") + "\r\n"
 	);
